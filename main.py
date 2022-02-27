@@ -231,8 +231,49 @@ def price():
     roo.title('Price List')
     x = Frame(roo, bg='white', width=600, height=220, relief=SUNKEN)
     x.pack(side=TOP)
+    
     lblinfo = Label(x, font=('Arial', 15, 'bold'), text='ITEM', fg='red', bd=5)
     lblinfo.grid(row=0, column=0)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='___________', fg='black', anchor=W)
+    lblinfo.grid(row=0, column=2)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='PRICE', fg='red', anchor=W)
+    lblinfo.grid(row=0, column=5)
+
+    # Fries Meal
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='Fries Meal', fg='steel blue', anchor=W)
+    lblinfo.grid(row=1, column=0)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='25', fg='black', anchor=W)
+    lblinfo.grid(row=1, column=5)
+
+    # Lunch Meal
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='Lunch Meal', fg='steel blue', anchor=W)
+    lblinfo.grid(row=2, column=0)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='40', fg='black', anchor=W)
+    lblinfo.grid(row=2, column=5)
+
+    # Burger Meal
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='Burger Meal', fg='steel blue', anchor=W)
+    lblinfo.grid(row=3, column=0)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='35', fg='black', anchor=W)
+    lblinfo.grid(row=3, column=5)
+
+    # Pizza Meal
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='Pizza Meal', fg='steel blue', anchor=W)
+    lblinfo.grid(row=4, column=0)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='50', fg='black', anchor=W)
+    lblinfo.grid(row=4, column=5)
+
+    # Cheese Burger
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='Cheese Burger', fg='steel blue', anchor=W)
+    lblinfo.grid(row=5, column=0)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='30', fg='black', anchor=W)
+    lblinfo.grid(row=5, column=5)
+
+    # Drinks
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='Drinks', fg='steel blue', anchor=W)
+    lblinfo.grid(row=6, column=0)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='5', fg='black', anchor=W)
+    lblinfo.grid(row=6, column=5)
 
 # Price Button
 btnPrice = Button(f1, padx=16, pady=8, bd=10, fg='black', font=('Arial', 16, 'bold'), width=10, text='PRICE', bg='powder blue', command=price)
