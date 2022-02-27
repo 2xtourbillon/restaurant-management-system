@@ -213,4 +213,20 @@ lblTotal.grid(row=5, column=2)
 txtTotal = Entry(f1, font=('arial', 17, 'bold'), textvariable=Total, bd=6, insertwidth=4, bg='red', justify='right')
 txtTotal.grid(row=5, column=3)
 
+# Total button
+btnTotal = Button(f1, padx=16, pady=8, bd=10, fg='black', font=('Arial', 16, 'bold'), width=10, text='TOTAL', bg='powder blue', command=Ref)
+btnTotal.grid(row=7, column=1)
+
+# Reset Button
+btnReset = Button(f1, padx=16, pady=8, bd=10, fg='black', font=('Arial', 16, 'bold'), width=10, text='RESET', bg='powder blue', command=reset)
+btnReset.grid(row=7, column=2)
+
+# Exit Button
+btnExit = Button(f1, padx=16, pady=8, bd=10, fg='black', font=('Arial', 16, 'bold'), width=10, text='EXIT', bg='powder blue', command=exit)
+btnExit.grid(row=7, column=3)
+
+# Price Button
+btnPrice = Button(f1, padx=16, pady=8, bd=10, fg='black', font=('Arial', 16, 'bold'), width=10, text='PRICE', bg='powder blue', command=price)
+btnPrice.grid(row=7, column=4)
+
 root.mainloop()
