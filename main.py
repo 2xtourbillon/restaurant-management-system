@@ -40,6 +40,26 @@ txtdisplay = Entry(f2, font=('arial', 20, 'bold'), textvariable=text_Input, bd=5
                     insertwidth=7, bg='green', justify='right')
 txtdisplay.grid(columnspan=4)
 
+# button click func
+def btnclick(numbers):
+    global operator
+    operator = operator + str(numbers)
+    text_Input.set(operator)
+
+# button to clear the display
+def clrdisplay():
+    global operator
+    operator = ""
+    text_Input.set("")
+
+# button to generate result
+def equals():
+    global operator
+    sumup = str(eval(operator))
+    text_Input.set(sumup)
+    operator = ""
+
+
 # button #7
 btn7 = Button(f2, padx=16, pady=16, bd=4, fg='white', font=('arial', 20, 'bold'),
               text='7', ng='black', command=lambda: btnclick(7))
