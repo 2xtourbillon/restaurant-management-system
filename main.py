@@ -139,5 +139,13 @@ Tax = StringVar()
 Cost = StringVar()
 Cheese_Burger = StringVar()
 
+# order label
+lblreference = Label(f1, font=('aria', 16, 'bold'), text='Order No.', fg='black', bd=10, anchor='w')
+lblreference.grid(row=0, column=0)
+
+# rand txt label
+txtreference = Entry(f1, font=('arial', 17, 'bold'), textvariable=rand, bd=6, insertwidth=4, bg='red', justify='right')
+txtreference.grid(row=1, column=1)
+
 
 root.mainloop()
