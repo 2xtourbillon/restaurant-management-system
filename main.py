@@ -1,4 +1,5 @@
 from ast import Str
+from asyncore import file_dispatcher
 from pickletools import stringnl_noescape
 from tkinter import *
 import random
@@ -143,9 +144,73 @@ Cheese_Burger = StringVar()
 lblreference = Label(f1, font=('aria', 16, 'bold'), text='Order No.', fg='black', bd=10, anchor='w')
 lblreference.grid(row=0, column=0)
 
-# rand txt label
 txtreference = Entry(f1, font=('arial', 17, 'bold'), textvariable=rand, bd=6, insertwidth=4, bg='red', justify='right')
 txtreference.grid(row=1, column=1)
 
+# fries
+lblfries = Label(f1, font=('aria', 16, 'bold'), text='Fries Meal', fg='black', bd=10, anchor='w')
+lblfries.grid(row=1, column=0)
+txtfries = Entry(f1, font=('arial', 17, 'bold'), textvariable=Fries, bd=6, insertwidth=4, bg='red', justify='right')
+txtfries.grid(row=1, column=1)
+
+# large fries
+lblLargefries = Label(f1, font=('aria', 16, 'bold'), text='Lunch Meal', fg='black', bd=10, anchor='w')
+lblLargefries.grid(row=2, column=0)
+txtLargefries = Entry(f1, font=('arial', 17, 'bold'), textvariable=LargeFries, bd=6, insertwidth=4, bg='red', justify='right')
+txtLargefries.grid(row=2, column=1)
+
+# burger
+lblburger = Label(f1, font=('aria', 16, 'bold'), text='Burger Meal', fg='black', bd=10, anchor='w')
+lblburger.grid(row=3, column=0)
+txtburger = Entry(f1, font=('arial', 17, 'bold'), textvariable=Burger, bd=6, insertwidth=4, bg='red', justify='right')
+txtburger.grid(row=3, column=1)
+
+# Filet
+lblFilet = Label(f1, font=('aria', 16, 'bold'), text='Pizza Meal', fg='black', bd=10, anchor='w')
+lblFilet.grid(row=4, column=0)
+txtFilet = Entry(f1, font=('arial', 17, 'bold'), textvariable=Filet, bd=6, insertwidth=4, bg='red', justify='right')
+txtFilet.grid(row=4, column=1)
+
+# Cheese Burger
+lblCheeseBurger = Label(f1, font=('aria', 16, 'bold'), text='Cheese Burger', fg='black', bd=10, anchor='w')
+lblCheeseBurger.grid(row=5, column=0)
+txtCheeseBurger = Entry(f1, font=('arial', 17, 'bold'), textvariable=Cheese_Burger, bd=6, insertwidth=4, bg='red', justify='right')
+txtCheeseBurger.grid(row=5, column=1)
+
+# Drinks
+lblDrinks = Label(f1, font=('aria', 16, 'bold'), text='Drinks', fg='black', bd=10, anchor='w')
+lblDrinks.grid(row=0, column=2)
+txtDrinks = Entry(f1, font=('arial', 17, 'bold'), textvariable=Drinks, bd=6, insertwidth=4, bg='red', justify='right')
+txtDrinks.grid(row=0, column=3)
+
+# Cost
+lblCost = Label(f1, font=('aria', 16, 'bold'), text='Cost', fg='black', bd=10, anchor='w')
+lblCost.grid(row=1, column=2)
+txtCost = Entry(f1, font=('arial', 17, 'bold'), textvariable=Cost, bd=6, insertwidth=4, bg='red', justify='right')
+txtCost.grid(row=1, column=3)
+
+# Service Charge
+lblService_Charge = Label(f1, font=('aria', 16, 'bold'), text='Service Charge', fg='black', bd=10, anchor='w')
+lblService_Charge.grid(row=2, column=2)
+txtService_Charge = Entry(f1, font=('arial', 17, 'bold'), textvariable=Service_Charge, bd=6, insertwidth=4, bg='red', justify='right')
+txtService_Charge.grid(row=2, column=3)
+
+# Tax
+lblTax = Label(f1, font=('aria', 16, 'bold'), text='Tax', fg='black', bd=10, anchor='w')
+lblTax.grid(row=3, column=2)
+txtTax = Entry(f1, font=('arial', 17, 'bold'), textvariable=Tax, bd=6, insertwidth=4, bg='red', justify='right')
+txtTax.grid(row=3, column=3)
+
+# Subtotal
+lblSubtotal = Label(f1, font=('aria', 16, 'bold'), text='Subtotal', fg='black', bd=10, anchor='w')
+lblSubtotal.grid(row=4, column=2)
+txtSubtotal = Entry(f1, font=('arial', 17, 'bold'), textvariable=SubTotal, bd=6, insertwidth=4, bg='red', justify='right')
+txtSubtotal.grid(row=4, column=3)
+
+# Total
+lblTotal = Label(f1, font=('aria', 16, 'bold'), text='Total', fg='black', bd=10, anchor='w')
+lblTotal.grid(row=5, column=2)
+txtTotal = Entry(f1, font=('arial', 17, 'bold'), textvariable=Total, bd=6, insertwidth=4, bg='red', justify='right')
+txtTotal.grid(row=5, column=3)
 
 root.mainloop()
