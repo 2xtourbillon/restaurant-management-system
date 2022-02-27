@@ -225,6 +225,15 @@ btnReset.grid(row=7, column=2)
 btnExit = Button(f1, padx=16, pady=8, bd=10, fg='black', font=('Arial', 16, 'bold'), width=10, text='EXIT', bg='powder blue', command=exit)
 btnExit.grid(row=7, column=3)
 
+def price():
+    roo = Tk()
+    roo.geometry('600x220')
+    roo.title('Price List')
+    x = Frame(roo, bg='white', width=600, height=220, relief=SUNKEN)
+    x.pack(side=TOP)
+    lblinfo = Label(x, font=('Arial', 15, 'bold'), text='ITEM', fg='red', bd=5)
+    lblinfo.grid(row=0, column=0)
+
 # Price Button
 btnPrice = Button(f1, padx=16, pady=8, bd=10, fg='black', font=('Arial', 16, 'bold'), width=10, text='PRICE', bg='powder blue', command=price)
 btnPrice.grid(row=7, column=4)
