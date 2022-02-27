@@ -1,3 +1,4 @@
+from ast import Str
 from pickletools import stringnl_noescape
 from tkinter import *
 import random
@@ -122,6 +123,21 @@ division.grid(row=5, column=3)
 btnequal = Button(f2, padx=16, pady=16, bd=4, fg='white', font=('arial', 20, 'bold'),
               text='=', ng='black', command=equals)
 btnequal.grid(columnspan=4)
+
+
+# items
+rand = StringVar()
+Fries = StringVar()
+LargeFries = StringVar()
+Burger = StringVar()
+Filet = StringVar()
+SubTotal = StringVar()
+Total = StringVar()
+Service_Charge = StringVar()
+Drinks = StringVar()
+Tax = StringVar()
+Cost = StringVar()
+Cheese_Burger = StringVar()
 
 
 root.mainloop()
